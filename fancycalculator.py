@@ -1,4 +1,4 @@
-opened_file = open('newfile.txt', mode = 'r')
+opened_file = open('newfile.txt')
 
 with open('newfile.txt', 'r') as file_to_read:
     contents = file_to_read.read().splitlines()
@@ -11,23 +11,23 @@ for calculation in contents:
     first_number = int(calculation_parts[2])
     second_number = int(calculation_parts[3])
     
-print (calculation)
+    print (calculation)
 
 
-if maths_operation == '+':
-    result = first_number + second_number
-elif maths_operation == '-':
-    result = first_number - second_number
-elif maths_operation == 'x':
-    result = first_number * second_number
-else: 
-    result = first_number / second_number
+    if maths_operation == '+':
+        result = first_number + second_number
+    elif maths_operation == '-':
+       result = first_number - second_number
+    elif maths_operation == 'x':
+        result = first_number * second_number
+    else: 
+        result = first_number / second_number
 
     print(result)
 
     running_total += result
 
-print(running_total)
+print(f'{running_total:.2f}')
 
 
 

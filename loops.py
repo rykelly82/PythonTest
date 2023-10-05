@@ -8,6 +8,9 @@ def find_strings_containing_a(strings):
     return result
 
 
+
+
+
 result = find_strings_containing_a(full_list)
 print(result)
 

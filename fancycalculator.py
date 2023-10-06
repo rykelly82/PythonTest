@@ -1,11 +1,11 @@
 opened_file = open('newfile.txt')
 
 with open('newfile.txt', 'r') as file_to_read:
-    contents = file_to_read.read().splitlines()
+    file_calculations_big_list = file_to_read.read().splitlines()
 
 running_total = 0
 
-for calculation in contents:
+for calculation in file_calculations_big_list:
     calculation_parts = calculation.split()
     maths_operation = calculation_parts[1]
     first_number = int(calculation_parts[2])
